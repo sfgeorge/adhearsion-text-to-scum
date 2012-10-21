@@ -1,0 +1,1 @@
+require 'adhearsion/text_to_scum'
