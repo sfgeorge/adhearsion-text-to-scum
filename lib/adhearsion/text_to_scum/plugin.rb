@@ -4,6 +4,7 @@ module Adhearsion
       # Actions to perform when the plugin is loaded
       #
       init :text_to_scum do
+        ::Adhearsion::CallController.mixin ::Adhearsion::TextToScum::ControllerMethods
         logger.info "adhearsion-text-to-scum has been loaded"
       end
 
